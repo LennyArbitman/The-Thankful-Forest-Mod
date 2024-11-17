@@ -2,6 +2,7 @@ package net.daedalians.thethankfulmod;
 
 //import com.example.examplemod.Config;
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,10 @@ public class TheThankfulMod
     public TheThankfulMod(FMLJavaModLoadingContext context){
         IEventBus modEventBus = context.getModEventBus();
 
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -52,6 +57,11 @@ public class TheThankfulMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event){
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.FALL_SAPLING);
+            event.accept(ModItems.SAPPHIRE);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
