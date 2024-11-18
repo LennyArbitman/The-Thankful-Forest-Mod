@@ -31,9 +31,11 @@ public class TheThankfulMod
     public TheThankfulMod(FMLJavaModLoadingContext context){
         IEventBus modEventBus = context.getModEventBus();
 
-        ModCreativeModeTabs.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
