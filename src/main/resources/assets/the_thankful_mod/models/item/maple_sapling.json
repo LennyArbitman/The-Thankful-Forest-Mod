@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "the_thankful_mod:item/fall_sapling"
+    "layer0": "the_thankful_mod:item/maple_sapling"
   }
 }
