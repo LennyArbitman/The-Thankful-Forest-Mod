@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "down": "the_thankful_mod:block/maple_top",
+    "up": "the_thankful_mod:block/maple_top",
+    "north": "the_thankful_mod:block/maple_side",
+    "south": "the_thankful_mod:block/maple_side",
+    "east": "the_thankful_mod:block/maple_side",
+    "west": "the_thankful_mod:block/maple_side",
+    "particle": "the_thankful_mod:block/maple_side"
+  }
+}

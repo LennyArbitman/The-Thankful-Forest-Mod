@@ -25,7 +25,7 @@ public class TheThankfulMod
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "the_thankful_mod";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     // Create a Deferred Register to hold Blocks which will all be registered under the "examplemod" namespace
 
     public TheThankfulMod(FMLJavaModLoadingContext context){
@@ -60,9 +60,11 @@ public class TheThankfulMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event){
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.FALL_SAPLING);
+            event.accept(ModItems.MAPLE_SAPLING);
             event.accept(ModItems.SAPPHIRE);
+
         }
+
 
     }
 

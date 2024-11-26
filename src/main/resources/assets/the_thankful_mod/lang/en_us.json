@@ -1,6 +1,9 @@
 {
-    "item.the_thankful_mod.sapphire": "Sapphire",
-    "item.the_thankful_mod.fall_sapling": "Fall Sapling",
+    "item.the_thankful_mod.sapphire": "Maple Block",
+    "item.the_thankful_mod.maple_sapling": "Maple Sapling",
+
+    "block.the_thankful_mod.maple_log": "Maple Log",
+    "block.the_thankful_mod.maple_leaves": "Maple Leaves",
 
 
     "creativetab.autumn_tab": "The Thankful Mod Tab"

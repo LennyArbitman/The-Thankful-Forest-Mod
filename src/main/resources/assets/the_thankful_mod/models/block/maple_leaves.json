@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "layer0": "the_thankful_mod:item/maple_sapling",
+    "particle": "the_thankful_mod:block/maple_side"
+  }
+}
